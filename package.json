@@ -1,0 +1,23 @@
+{
+  "name": "csc437",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bpowell5184/CSC437.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bpowell5184/CSC437/issues"
+  },
+  "homepage": "https://github.com/Bpowell5184/CSC437#readme",
+  "description": "",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

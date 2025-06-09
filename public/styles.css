@@ -1,0 +1,59 @@
+@import url('./tokens.css');
+
+header {
+    color : var(--color-header);
+    background-color: var(--color-header-text);
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 1rem;
+    min-width: 11rem;
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0rem;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: "Spectral", serif;
+}
+
+nav {
+    margin-left: 3rem;
+    color: var(--color-nav);
+    font-family: "Spectral", serif;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+    width: 30rem;
+}
+
+a {
+    color: var(--color-links);
+}
+
+main {
+    color: var(--color-main-text);
+    background-color: var(--color-background);
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+.about-me-line{
+    margin-top: 0.1rem;
+}
+
+.reading-list{
+    color: var(--color-main-text);
+    background-color: var(--color-background);
+}
