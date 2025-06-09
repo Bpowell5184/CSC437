@@ -16,7 +16,13 @@ function buildHeaderHTML() {
             <h1>Brandon Powell</h1>
             <nav class="mobile-nav hidden">${buildNavHTML()}</nav>
         </div>
-        <button class="menu-button">Menu</button>
+        <div class="menu-controls">
+            <label class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-switch" autocomplete="off" />
+                Dark mode
+            </label>
+            <button class="menu-button">Menu</button>
+        </div>
         </header>
     `;
 }
@@ -26,6 +32,7 @@ function createHeader() {
     const header = newHeader.querySelector("header");
     const nav = newHeader.querySelector("nav");
     const button = newHeader.querySelector(".menu-button");
+    const darkModeToggle = newHeader.querySelector("#dark-mode-switch");
 
     button.addEventListener("click", (e) => {
         nav.classList.toggle("hidden");
@@ -36,6 +43,18 @@ function createHeader() {
           nav.classList.add("hidden");
         }
     });
+
+    darkModeToggle.addEventListener("change", () => {
+        const isDarkMode = darkModeToggle.checked;
+        document.body.classList.toggle("dark-mode", isDarkMode);
+        localStorage.setItem("dark-mode", isDarkMode.toString());
+    });
+
+    const savedMode = localStorage.getItem("dark-mode");
+    if (savedMode === "true") {
+        document.body.classList.add("dark-mode");
+        darkModeToggle.checked = true;
+    }
 
     const container = document.getElementById("header-container");
     container.replaceChildren(newHeader);

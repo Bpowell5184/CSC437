@@ -6,3 +6,12 @@
     --color-background: #3E453E;
     --color-nav: #90ee8d;
 }
+
+body.dark-mode {
+    --color-main-text: #1b1b1b;
+    --color-header: #1b1b1b;
+    --color-header-text: #cee0be;
+    --color-links: #005f4b;
+    --color-background: #e6ffe6;
+    --color-nav: #006644;
+}

@@ -14,6 +14,14 @@ header {
     align-items: center;
 }
 
+.menu-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
 .menu-button {
     display: none;
     background-color: var(--color-links);
@@ -80,6 +88,7 @@ main {
     nav.mobile-nav {
         display: flex;
         flex-direction: column;
+        max-width: 200px;
     }
 
     nav.mobile-nav.hidden {
@@ -127,3 +136,13 @@ main {
 .hidden {
     display: none
 }
+
+.dark-mode-toggle {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--color-main-text);
+    font-family: "Spectral", serif;
+    font-size: 0.9rem;
+  }
